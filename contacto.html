@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - EduOnline</title>
+        <link rel="icon" href="images/logo.png" type="image/png">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="title-logo">
+                        <img src="images/logo.png" alt="Logo EduOnline"
+                            class="logo-img">
+                        <div class="logo-text">
+                            <h1>EduOnline</h1>
+                            <p>Aprendizaje sin límites</p>
+                        </div>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html"
+                                class="active">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-hero">
+                <div class="container">
+                    <h2>Contacto</h2>
+                    <p>Estamos aquí para ayudarte en tu viaje de aprendizaje</p>
+                </div>
+            </section>
+
+            <section class="contact-content">
+                <div class="container">
+                    <div class="contact-grid">
+                        <article class="contact-info">
+                            <h2>Información de Contacto</h2>
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p>info@eduonline.com</p>
+                                <p>soporte@eduonline.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Teléfono</h3>
+                                <p>+1 234 567 890</p>
+                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Dirección</h3>
+                                <p>Av. Ficticia, Calle Ficticia, Edificio Ficticio</p>
+                                <p>Machala, El Oro, Ecuador</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Redes Sociales</h3>
+                                <ul class="social-links">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">LinkedIn</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="contact-form">
+                            <h2>Envíanos un Mensaje</h2>
+                            <form id="contactForm" action="#" method="POST"
+                                onsubmit="enviarFormulario(event)">
+                                <div class="form-group">
+                                    <label for="name">Nombre Completo</label>
+                                    <input type="text" id="name" name="name"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono
+                                        (Opcional)</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Asunto</label>
+                                    <select id="subject" name="subject"
+                                        required>
+                                        <option value>Selecciona un
+                                            asunto</option>
+                                        <option value="informacion">Información
+                                            de cursos</option>
+                                        <option value="soporte">Soporte
+                                            técnico</option>
+                                        <option
+                                            value="facturacion">Facturación</option>
+                                        <option value="otros">Otros</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensaje</label>
+                                    <textarea id="message" name="message"
+                                        rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">Enviar
+                                    Mensaje</button>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <h2>Preguntas Frecuentes</h2>
+                    <div class="faq-list">
+                        <article class="faq-item">
+                            <h3>¿Cómo puedo inscribirme en un curso?</h3>
+                            <p>Puedes inscribirte directamente desde nuestra
+                                plataforma. Selecciona el curso de tu interés,
+                                haz clic en "Inscribirse" y sigue los pasos de
+                                registro. El proceso es rápido y seguro.</p>
+                        </article>
+                        <article class="faq-item">
+                            <h3>¿Qué métodos de pago aceptan?</h3>
+                            <p>Aceptamos tarjetas de crédito/débito (Visa,
+                                MasterCard, American Express), transferencias
+                                bancarias y pagos a través de PayPal. También
+                                ofrecemos planes de financiamiento para algunos
+                                cursos.</p>
+                        </article>
+                        <article class="faq-item">
+                            <h3>¿Los certificados son reconocidos?</h3>
+                            <p>Sí, nuestros certificados son reconocidos por
+                                empresas e instituciones educativas. Contamos
+                                con acreditación internacional y nuestros
+                                egresados han tenido éxito en el mercado
+                                laboral.</p>
+                        </article>
+                        <article class="faq-item">
+                            <h3>¿Puedo acceder a los cursos desde cualquier
+                                dispositivo?</h3>
+                            <p>Absolutamente. Nuestra plataforma es compatible
+                                con computadoras, tabletas y teléfonos móviles.
+                                Puedes estudiar desde cualquier lugar con
+                                conexión a internet.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <span class="modal-cerrar"
+                    onclick="cerrarModal()">&times;</span>
+                <h2>¡Éxito!</h2>
+                <p>¡Mensaje enviado correctamente! Nos pondremos en contacto
+                    pronto.</p>
+                <button class="btn" onclick="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>EduOnline</h3>
+                        <p>Tu plataforma de educación online de confianza</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contacto</h3>
+                        <p>Email: info@eduonline.com</p>
+                        <p>Teléfono: +1 234 567 890</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 EduOnline. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/contacto.js"></script>
+    </body>
+</html>
