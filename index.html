@@ -63,6 +63,32 @@
                 </div>
             </section>
 
+            <section class="search-section">
+                <div class="container">
+                    <h2>📚 Biblioteca de Recursos</h2>
+                    <p>Busca libros y recursos educativos para complementar tu aprendizaje</p>
+                    
+                    <div class="search-container">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Busca un libro por título..."
+                            aria-label="Buscar libro"
+                        >
+                        <button id="searchBtn" class="btn btn-search">🔍 Buscar</button>
+                    </div>
+
+                    <div id="loadingMessage" class="loading-message" style="display: none;">
+                        ⏳ Buscando libros...
+                    </div>
+
+                    <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+                    <div id="resultsContainer" class="results-container"></div>
+                </div>
+            </section>
+
             <section class="courses">
                 <div class="container">
                     <h2>🎓 Cursos Populares</h2>
@@ -197,5 +223,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/busqueda.js"></script>
     </body>
 </html>
